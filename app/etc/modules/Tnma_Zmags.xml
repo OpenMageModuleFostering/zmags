@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * TNMA
+ *
+ *
+ * @category    Tnma
+ * @package     Tnma_Zmags.xml
+ * @copyright   Copyright (c) 2013 Tnm Agency cc. (http://www.tnma.co.za)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Tnma_Zmags>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Tnma_Zmags>
+    </modules>
+</config>

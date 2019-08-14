@@ -1,0 +1,46 @@
+<?php $_publication = $this->getPublication(); ?>
+
+<?php if( $_publication->getStatus() && $_publication->getStatus() =='1' && $_publication->getHasStatrted()
+    && !$_publication->gethasExpired()): ?>
+<div class="page-title">
+    <h1><?php echo $_publication->gettitle(); ?></h1>
+</div>
+
+<div style="height: <?php echo $_publication->getHeight();?>px;">
+<script type="text/javascript">
+    var ____configuration = {
+        root: {
+            viewer: {
+                        publicationID: "<?php echo $_publication->getPublicationId();?>"
+                    }
+               }
+    };
+
+    Event.observe(window, 'load', function() {
+        var PWisClosed = false;
+        zmagsLightbox.$(document).bind('cbox_closed', function(){
+
+            if(!PWisClosed){
+                ____win.close();
+                PWisClosed = true;
+            }
+
+
+        });
+
+        zmagsLightbox.$(document).bind('cbox_load', function(){
+            PWisClosed = false;
+        });
+
+
+    });
+
+</script>
+<script id="psz-snippet" type="text/javascript" src="//ps.zmags.com/clients/magento/out.js"></script>
+
+    </div>
+<?php else:?>
+
+<h2>Publication not active</h2>
+
+<?php endif;?>

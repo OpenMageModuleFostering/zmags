@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Tnma
+ *
+ *
+ * @category    Tnma
+ * @package     Tnma_Zmags
+ * @copyright   Copyright (c) 2013 Tnm Agency cc (http://www.tnma.co.za)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Tnma_Zmags>
+            <version>0.0.1.3.6</version>
+        </Tnma_Zmags>
+    </modules>
+
+
+    <default>
+        <zmags>
+            <configuration>
+                <customer_id></customer_id>
+                <application_key></application_key>
+                <api_base_url>http://api.viewer.zmags.com</api_base_url>
+                <slug>zmags</slug>
+            </configuration>
+        </zmags>
+        <web>
+            <routers>
+                <tnma_zmags>
+                    <area>frontend</area>
+                    <class>Tnma_Zmags_Controller_Router_Publication</class>
+                </tnma_zmags>
+            </routers>
+        </web>
+    </default>
+
+    <global>
+        <helpers>
+            <zmags>
+                <class>Tnma_Zmags_Helper</class>
+            </zmags>
+        </helpers>
+        <blocks>
+            <zmags>
+                <class>Tnma_Zmags_Block</class>
+            </zmags>
+			<catalog>
+				<rewrite>
+					<product_view>Tnma_Zmags_Block_View</product_view>
+				</rewrite>
+			</catalog>
+        </blocks>
+
+        <models>
+
+            <zmags>
+                <class>Tnma_Zmags_Model</class>
+                <resourceModel>zmags_resource</resourceModel>
+            </zmags>
+
+            <zmags_resource>
+                <class>Tnma_Zmags_Model_Resource</class>
+                <deprecatedNode>zmags_mysql4</deprecatedNode>
+                <entities>
+                    <publication>
+                        <table>zmags_publication</table>
+                    </publication>
+                    <customtemplate>
+                         <table>zmags_template</table>
+                    </customtemplate>
+                </entities>
+            </zmags_resource>
+
+        </models>
+
+        <resources>
+            <zmags_setup>
+                <setup>
+                    <module>Tnma_Zmags</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </zmags_setup>
+        </resources>
+    </global>
+    <admin>
+        <routers>
+            <zmags>
+                <use>admin</use>
+                <args>
+                    <module>Tnma_Zmags</module>
+                    <frontName>zmags</frontName>
+                </args>
+            </zmags>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <tnma_zmags after="Mage_Adminhtml">Tnma_Zmags_Adminhtml</tnma_zmags>
+                    </modules>
+                </args>
+            </adminhtml>			
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <zmags module="zmags">
+                <title>Zmags Publications</title>
+                <sort_order>71</sort_order>
+                <children>
+                    <publications translate="title" module="zmags">
+                        <title>Manage Publications</title>
+                        <sort_order>1</sort_order>
+                        <action>zmags/adminhtml_publications</action>
+                    </publications>
+					<customtemplates translate="title" module="zmags">
+                    <title>Manage Custom Templates</title>
+                    <sort_order>10</sort_order>
+                    <action>zmags/adminhtml_customtemplates</action>
+                </customtemplates>
+                </children>
+            </zmags>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <zmags translate="title" module="zmags">
+                                            <title>Zmags Settings</title>
+                                        </zmags>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <layout>
+            <updates>
+                <zmags>
+					<file>zmags.xml</file>
+
+                </zmags>
+            </updates>
+        </layout>
+    </adminhtml>
+
+    <frontend>
+        <layout>
+            <updates>
+                <zmags>
+                    <file>zmags.xml</file>
+                </zmags>
+            </updates>
+        </layout>
+
+        <routers>
+            <zmags>
+                <use>tnma_zmags</use>
+
+            </zmags>
+        </routers>
+
+
+    </frontend>
+
+
+    <stores>
+        <default>
+            <web>
+                <routers>
+                    <tnma_zmags>
+                        <area>frontend</area>
+                        <class>Tnma_Zmags_Controller_Router_Publication</class>
+                    </tnma_zmags>
+                </routers>
+            </web>
+        </default>
+    </stores>
+
+
+</config>

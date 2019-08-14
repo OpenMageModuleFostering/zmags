@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/zmags",
+    "type": "magento-module",
+    "license": "Open-Software-License-(OSL)",
+    "homepage": "",
+    "description": "Publish your Zmags publications on your magento website.",
+    "authors": [
+    {
+        "name": "Zmags Marketing",
+        "email": "hdi@zmags.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

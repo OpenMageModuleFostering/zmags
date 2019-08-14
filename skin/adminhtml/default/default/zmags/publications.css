@@ -1,0 +1,272 @@
+
+
+
+div#drop_here {
+    width: 145px;
+    height: 260px;
+    background: #fff;
+    border: 5px solid #ccc;
+    text-align: center;
+    position: relative;
+
+
+    line-height: 100px; }
+div#drop_here.hover {
+    border: 5px dashed #aaa;
+    background:#efefef; }
+
+
+.widget-box {
+    border: 1px solid #C9C9C9;
+}
+.widget {
+    border-radius: 4px 4px 4px 4px;
+    margin-bottom: 20px;
+    position: relative;
+    max-width: 150px;
+    min-width: 185px;
+}
+
+.widget-header {
+    border-bottom: 1px solid #BBBBBB;
+    border-radius: 4px 4px 0 0;
+    min-height: 30px;
+    padding: 5px 0 4px;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: linear-gradient(to bottom, #E5E7EB 0%, #D8DADE 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 0 #FFFFFF inset;
+
+}
+
+
+
+.widget-content {
+    background-color: #FAFAFA;
+}
+
+.widget-body{
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* THUMBNAILS
+ ---------------------------------------------------------------------------- */
+
+.thumbnail {
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+    display: block;
+    line-height: 20px;
+    padding: 4px;
+    transition: all 0.2s ease-in-out 0s;
+    max-width: 125px !important;
+    min-height: 215px;
+    max-height: 215px;
+}
+
+.nailthumb-container {
+    display: block;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    width: auto;
+}
+
+
+img.nailthumb-image {
+    float: left;
+    margin: 0;
+    max-width: none;
+    padding: 0;
+    text-align: left;
+}
+
+.thumbnails > div {
+    margin-left: 30px;
+}
+.thumbnails > div {
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.thumbnail {
+    border-color: #D3D6D7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+
+
+.thumbnail {
+    padding: 5px;
+    border-color: #d3d6d7;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+.thumbnail-condensed,
+.thumbnails.thumbnail-condensed .thumbnail {
+    padding: 0;
+}
+
+.thumbnail.well-nice {
+    background-color: #f6f7fe;
+    border-color: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.30);
+}
+
+.thumbnail.well-black {
+    border-color: #323232;
+}
+
+.well-black .thumbnail.well-black {
+    border-color: #2a2c2f;
+}
+
+.thumbnail.well-impressed {
+    border-color: #c4c6ca;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.06), inset 0 0 2px rgba(0, 0, 0, 0.15), inset 1px 1px 1px rgba(0, 0, 0, 0.055), 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.06), inset 0 0 2px rgba(0, 0, 0, 0.15), inset 1px 1px 1px rgba(0, 0, 0, 0.055), 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.06), inset 0 0 2px rgba(0, 0, 0, 0.15), inset 1px 1px 1px rgba(0, 0, 0, 0.055), 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.thumbnail.well-black.well-impressed {
+    border: 1px solid #222222;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.well-black .thumbnail.well-impressed {
+    border: 1px solid #3a3e41;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.well-black .thumbnail.well-black.well-impressed {
+    border: 1px solid #222222;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 0 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7), inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/*
+.thumbnails .well {
+  margin-bottom: 0;
+}
+*/
+
+.thumbnail .img-desc {
+    font-size: 12px;
+    line-height: 16px;
+    color: #777777
+}
+
+.thumbnail .action {
+    padding: 0 9px;
+}
+
+.thumbnail .action .btn {
+    margin-bottom: 2px;
+}
+
+.thumbnail .caption .action {
+    padding: 0;
+}
+
+.well-black .thumbnail {
+    border-color: #55585b;
+}
+
+.well-black.thumbnail .caption,
+.well-black .thumbnail .caption,
+.thumbnail .well-black .caption {
+    color: #d1d1d1;
+}
+
+.well-black.thumbnail .img-desc,
+.well-black .thumbnail .img-desc,
+.thumbnail .well-black .img-desc {
+    color: #b1b1b1;
+}
+
+
+/* BOO THUMB
+------------------------------------------------------------------------- ***/
+
+
+
+
+
+
+.img-shadow {
+    position: relative;
+    float: left;/*max-width: 100%;*/
+}
+
+.img-radius {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.img-radius-top {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.img-radius-bottom {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+}
+
+/*
+.ie8 .img-shadow,
+.ie8 .img-shadow .thumb {
+  width: 100%;
+}*/
+
+
+
+
+
+
+
+.img-shadow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+.img-shadow img {
+    float: left;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* MEDIA
+ ---------------------------------------------------------------------------- */

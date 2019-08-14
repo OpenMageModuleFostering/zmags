@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+
+    <zmags_adminhtml_customtemplates_index>
+        <update handle="editor"/>
+        <reference name="content">
+            <block type="zmags/adminhtml_customtemplates" name="zmags_customtemplate"/>
+        </reference>
+    </zmags_adminhtml_customtemplates_index>
+	
+
+    <zmags_adminhtml_customtemplates_edit>
+		<reference name="head">
+			<action method="addJs"><script>tnma/zmags/jscolor.js</script></action>
+		</reference>
+    </zmags_adminhtml_customtemplates_edit>	
+
+
+
+    <zmags_adminhtml_publications_index>
+        <reference name="content">
+            <block type="zmags/adminhtml_publications" name="zmags" />
+        </reference>
+
+    </zmags_adminhtml_publications_index>
+
+    <zmags_adminhtml_publications_edit>
+
+        <reference name="head">
+            <action method="addCss"><name>zmags/publications.css</name></action>
+        </reference>
+        <reference name="head">
+
+            <action method="removeItem"><type>js</type><name>prototype/prototype.js</name></action>
+            <action method="addJs"><script>tnma/zmags/prototype.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>extjs/fix-defer-before.js</name></action>
+            <action method="addItem"><type>js</type><name>extjs/fix-defer-before.js</name><params/><if/><condition>can_load_ext_js</condition></action>
+
+            <action method="removeItem"><type>js</type><name>prototype/window.js</name></action>
+            <action method="addJs"><script>prototype/window.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>scriptaculous/builder.js</name></action>
+            <action method="addJs"><script>tnma/zmags/scriptaculous/builder.js</script></action>
+
+
+
+            <action method="removeItem"><type>js</type><name>scriptaculous/effects.js</name></action>
+            <action method="addJs"><script>tnma/zmags/scriptaculous/effects.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>scriptaculous/dragdrop.js</name></action>
+            <action method="addJs"><script>tnma/zmags/scriptaculous/dragdrop.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>scriptaculous/controls.js</name></action>
+            <action method="addJs"><script>tnma/zmags/scriptaculous/controls.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>scriptaculous/slider.js</name></action>
+            <action method="addJs"><script>tnma/zmags/scriptaculous/slider.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>lib/ccard.js</name></action>
+            <action method="addJs"><script>lib/ccard.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>prototype/validation.js</name></action>
+            <action method="addJs"><script>prototype/validation.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>varien/js.js</name></action>
+            <action method="addJs"><script>varien/js.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/translate.js</name></action>
+            <action method="addJs"><script>mage/translate.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/hash.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/hash.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/events.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/events.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/loader.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/loader.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/grid.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/grid.js</script></action>
+
+
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/tabs.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/tabs.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/form.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/form.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/accordion.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/accordion.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/tools.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/tools.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/uploader.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/uploader.js</script></action>
+
+            <action method="removeItem"><type>js</type><name>mage/adminhtml/product.js</name></action>
+            <action method="addJs"><script>mage/adminhtml/product.js</script></action>
+
+
+
+
+            <action method="removeItem"><type>js</type><name>calendar/calendar.js</name></action>
+
+
+            <action method="addItem"><type>js</type><name>calendar/calendar.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+
+            <action method="removeItem"><type>js</type><name>calendar/calendar-setup.js</name></action>
+            <action method="addItem"><type>js</type><name>calendar/calendar-setup.js</name><!--<params/><if/><condition>can_load_calendar_js</condition>--></action>
+
+
+            <action method="removeItem"><type>js</type><name>extjs/ext-tree.js</name></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree.js</name><params/><if/><condition>can_load_ext_js</condition></action>
+
+            <action method="removeItem"><type>js</type><name>extjs/fix-defer.js</name></action>
+            <action method="addItem"><type>js</type><name>extjs/fix-defer.js</name><params/><if/><condition>can_load_ext_js</condition></action>
+
+            <action method="removeItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name></action>
+            <action method="addItem"><type>js</type><name>extjs/ext-tree-checkbox.js</name><params/><if/><condition>can_load_ext_js</condition></action>
+
+
+
+
+
+
+
+
+            <action method="addJs"><script>tnma/zmags/jquery-1.9.1.min.js</script></action>
+            <action method="addJs"><script>tnma/zmags/publications-admin.js</script></action>
+
+
+        </reference>
+    </zmags_adminhtml_publications_edit>
+
+
+</layout>

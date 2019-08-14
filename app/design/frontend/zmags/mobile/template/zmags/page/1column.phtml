@@ -1,0 +1,90 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     default_iphone
+ * @copyright   Copyright (c) 2012 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        //<![CDATA[
+       /* addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }*/
+        //]]>
+    </script>
+    <?php echo $this->getChildHtml('head') ?>
+    <style type="text/css">
+        .form-search, .header-bg,.header-banner, .menu-wrapper{
+            display: none;
+        }
+    </style>
+</head>
+<body <?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?> onunload="">
+    <?php echo $this->getChildHtml('after_body_start') ?>
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <?php echo $this->getChildHtml('header') ?>
+
+    <div class="container">
+    <section role="main" class="<?php echo $this->getMyClass() ?>">
+        <?php //echo $this->getChildHtml('breadcrumbs') ?>
+        <?php echo $this->getChildHtml('global_messages') ?>
+        <?php //echo $this->getChildHtml('homepage.banner') ?>
+        <?php echo $this->getChildHtml('content') ?>
+
+            <div class="row">
+
+                <!-- Modal -->
+                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+
+                        <h3 id="myModalLabel">Add To Cart</h3>
+                    </div>
+                    <div id="modal_body" class="modal-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+
+                        <a id="show-cart" target="_parent" style="text-decoration: none;" href="<?php echo $this->getUrl('checkout/cart')?>" class="btn">View Cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+    </div>
+
+    <?php //echo $this->getChildHtml('footer') ?>
+
+    <?php echo $this->getChildHtml('before_body_end') ?>
+    <?php echo $this->getAbsoluteFooter() ?>
+
+
+
+
+</body>
+</html>

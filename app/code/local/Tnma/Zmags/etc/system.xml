@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * TNMA
+ *
+ *
+ * @category    Tnma
+ * @package     Tnma_Zmags
+ * @copyright   Copyright (c) 2013 Tnm Agency cc (http://www.tnma.co.za)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+
+    <tabs>
+        <tbtall translate="label" module="zmags">
+            <label>Zmags Extensions</label>
+            <sort_order>900</sort_order>
+        </tbtall>
+    </tabs>
+    <sections>
+        <zmags translate="label" module="zmags" >
+            <label>Zmags Configuration</label>
+            <tab>tbtall</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>0</show_in_store>
+            <groups>
+                <configuration translate="label">
+                    <label>Configure Zmags</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <fields>
+                        <customer_id translate="label">
+                            <label>Customer ID</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <comment>
+                                <![CDATA[Your Zmags Customer ID]]>
+                            </comment>
+                        </customer_id>
+                        <application_key translate="label">
+                            <label>Application Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <comment>
+                                <![CDATA[Your Zmags Application Key. Contact Zmags support to obtain your application key]]>
+                            </comment>
+                        </application_key>
+                        <api_base_url translate="label">
+                            <label>Api Base Url</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <comment>
+                                <![CDATA[Base url for Zmags api. <br/>Default: http://api.viewer.zmags.com <span class="notice">(no trailing backslash)</span>]]>
+                            </comment>
+                        </api_base_url>
+                        <slug translate="label">
+                            <label>Custom Slug</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <comment>
+                                <![CDATA[Custom slug on which your publications will be published.<br/> http://www.mystore.com/<span class="notice">zmags</span>/publication-name]]>
+
+                            </comment>
+                        </slug>
+
+
+
+
+                    </fields>
+                </configuration>
+                <design>
+                    <label>Customize Design / Layout</label>
+                    <sort_order>2</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                     <fields>
+                         <product_template translate="label">
+                             <label>Default Product View</label>
+                             <frontend_type>select</frontend_type>
+                             <source_model>zmags/customtemplate</source_model>
+                             <sort_order>1</sort_order>
+                             <show_in_default>1</show_in_default>
+                             <show_in_website>1</show_in_website>
+                             <show_in_store>1</show_in_store>
+                         </product_template>
+
+                         <theme translate="label">
+                             <label>Theme</label>
+                             <frontend_type>select</frontend_type>
+                             <source_model>zmags/design_source_design</source_model>
+                             <sort_order>2</sort_order>
+                             <show_in_default>1</show_in_default>
+                             <show_in_website>1</show_in_website>
+                             <show_in_store>1</show_in_store>
+                         </theme>
+
+                         <layout translate="label">
+                             <label>Layout</label>
+                             <frontend_type>select</frontend_type>
+                             <source_model>page/source_layout</source_model>
+                             <sort_order>3</sort_order>
+                             <show_in_default>1</show_in_default>
+                             <show_in_website>1</show_in_website>
+                             <show_in_store>1</show_in_store>
+                         </layout>
+
+                     </fields>
+                </design>
+            </groups>
+
+        </zmags>
+    </sections>
+</config>

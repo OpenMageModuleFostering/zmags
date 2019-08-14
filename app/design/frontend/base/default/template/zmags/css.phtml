@@ -1,0 +1,109 @@
+<?php
+/**
+ * Created by JetBrains PhpStorm.
+ * User: Wickass
+ * Date: 2013/02/28
+ * Time: 5:32 PM
+ * To change this template use File | Settings | File Templates.
+ */
+
+$template = $this->getZmagsTemplate();
+?>
+
+.product-view .product-shop .product-name h1{
+ color: #<?php echo $template->getProductName();?>;
+}
+
+.product-essential{
+   background: #<?php echo $template->getBackground();?>;
+
+
+}
+
+.product-view{
+ color: #<?php echo $template->getText();?>;
+ border: <?php echo $template->getBorderWidth();?>px solid #<?php echo $template->getBorderColor();?>;
+ -webkit-border-radius: <?php echo $template->getBorderRadius();?>px;
+ -moz-border-radius: <?php echo $template->getBorderRadius();?>px  ;
+ border-radius: <?php echo $template->getBorderRadius();?>px  ;
+}
+
+.product-view .product-essential{
+
+-webkit-border-radius: <?php echo $template->getBorderRadius();?>px  <?php echo $template->getBorderRadius();?>px 0px 0px;
+-moz-border-radius: <?php echo $template->getBorderRadius();?>px  <?php echo $template->getBorderRadius();?>px 0px 0px;
+border-radius: <?php echo $template->getBorderRadius();?>px <?php echo $template->getBorderRadius();?>px 0px  0px;
+
+
+}
+
+.product-view .product-collateral{
+
+-webkit-border-radius: 0px 0px <?php echo $template->getBorderRadius();?>px  <?php echo $template->getBorderRadius();?>px;
+-moz-border-radius: 0px 0px <?php echo $template->getBorderRadius();?>px  <?php echo $template->getBorderRadius();?>px;
+border-radius: 0px 0px <?php echo $template->getBorderRadius();?>px <?php echo $template->getBorderRadius();?>px ;
+
+
+}
+
+
+.product-view .product-img-box .more-views li a {
+border: <?php echo $template->getTnBorderWidth();?>px solid #<?php echo $template->getThumbnailBorder();?>;
+
+-webkit-border-radius: <?php echo $template->getTnBorderRadius();?>px;
+-moz-border-radius: <?php echo $template->getTnBorderRadius();?>px;
+border-radius: <?php echo $template->getTnBorderRadius();?>px;
+
+
+}
+
+
+
+.product-view h2, .product-view h3,.product-view h4,.product-view h5
+{
+color: #<?php echo $template->getHeadingColors();?>;
+border-bottom: 1px solid #<?php echo $template->getBackground();?>;
+
+}
+
+.product-collateral {
+background: #<?php echo $template->getDescriptionBackground();?>
+
+}
+
+.product-view a{
+color: #<?php echo $template->getLink();?>;
+}
+
+.product-view a:hover{
+color: #<?php echo $template->getHover();?>;
+}
+
+.special-price .price-label {
+color: #<?php echo $template->getSpecialPrice();?>;
+
+}
+
+
+.special-price .price {
+color: #<?php echo $template->getSpecialPrice();?>;
+}
+
+
+.product-view .add-to-cart button.button span {
+background: none repeat scroll 0 0 #<?php echo $template->getAddtocartBg();?>;
+border: 1px solid #<?php echo $template->getAddtocartFont();?>;
+color: #<?php echo $template->getAddtocartFont();?>;
+display: block;
+font: bold 12px/19px Arial,Helvetica,sans-serif;
+height: 19px;
+padding: 0 8px;
+text-align: center;
+white-space: nowrap;
+}
+
+
+.product-view .add-to-cart button.button span span{
+ border: 0 none;
+ padding: 0;
+}
