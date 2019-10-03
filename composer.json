@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/zmags",
+    "name": "openmage-module-fostering\/zmags",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Publish your Zmags publications on your magento website.",
     "authors": [
